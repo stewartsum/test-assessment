@@ -4,7 +4,7 @@ The goal of the assessment is to allow you to demonstrate basic coding knowledge
 
 You are free to use the code editor of your choice to implement your solution to the coding exercises. PyCharm is popular and is slightly easier to use than other IDEs. VS Code is also another popular option. Please attempt the assessment on your own without using human or AI assistance. Internet search engines are fine otherwise.
 
-The assessment into divided into two sections:
+The assessment is divided into two sections:
 
 1. Functions
 2. Data Exploration

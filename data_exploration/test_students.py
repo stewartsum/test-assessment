@@ -2,12 +2,15 @@ import unittest
 import pandas as pd
 from pandas.testing import assert_frame_equal
 
-from students import get_data, get_students_by_female_with_score_greater_than_90
+from data_exploration.students import (
+    get_data,
+    get_students_by_female_with_score_greater_than_90,
+)
 
 
 class TestStudents(unittest.TestCase):
     def setUp(self) -> None:
-        file = "students.csv"
+        file = "data_exploration/students.csv"
         self.students = get_data(file)
 
     def test_get_students_by_female_with_score_greater_than_90(self):
@@ -25,7 +28,3 @@ class TestStudents(unittest.TestCase):
                 index=([11, 32]),
             ),
         )
-
-
-if __name__ == "__main__":
-    unittest.main()

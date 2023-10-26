@@ -1,5 +1,5 @@
 import unittest
-from count_vowels import count_vowels
+from functions.count_vowels import count_vowels
 
 
 class TestCountVowels(unittest.TestCase):
@@ -11,7 +11,3 @@ class TestCountVowels(unittest.TestCase):
         ]
         for input, output in input_output_list:
             self.assertEqual(count_vowels(input), output)
-
-
-if __name__ == "__main__":
-    unittest.main()

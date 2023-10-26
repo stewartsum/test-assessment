@@ -1,5 +1,5 @@
 import unittest
-from reverse_string import reverse_string
+from functions.reverse_string import reverse_string
 
 
 class TestCountVowels(unittest.TestCase):
@@ -12,7 +12,3 @@ class TestCountVowels(unittest.TestCase):
 
         for input, output in input_output_list:
             self.assertEqual(reverse_string(input), output)
-
-
-if __name__ == "__main__":
-    unittest.main()

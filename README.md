@@ -1,8 +1,20 @@
 # Python Coding Assessment
 
+## Introduction
+
 The goal of the assessment is to allow you to demonstrate basic coding knowledge using modern Python 3. The version of Python used to perform and test the assertion checks was 3.11.5. Your system installation of Python should be at least version 3.10.
 
 You are free to use the code editor of your choice to implement your solution to the coding exercises. PyCharm is popular and is slightly easier to use than other IDEs. VS Code is also another popular option. Please attempt the assessment on your own without using human or AI assistance. Internet search engines are fine otherwise.
+
+## Setup
+
+First clone the GitHub repository to your local machine and do all your work from the main branch. Remember to commit your work and push back to your repository when done.
+
+Make sure you have a Python 3 installation of at least version 3.10 on your computer.
+
+Install the modules/packages listed in the requirements.txt file by running `pip install -r requirements.txt` in a terminal.
+
+## The Project Structure
 
 The assessment is divided into two sections:
 
@@ -33,7 +45,7 @@ Implement the function using the sample input/output hint.
 | `"able does it"` | `{"a": 1, "e": 2, "i": 1, "o": 1, "u": 0}` |
 | `""`             | `{"a": 0, "e": 0, "i": 0, "o": 0, "u": 0}` |
 
-Test your solution by running the unit test <code>test_count_vowels.py</code> from your IDE or the command line.
+Test your solution by running the unit test <code>test_count_vowels.py</code> from your IDE or the command line by running `python -m unittest -v functions.test_count_vowels`
 
 ### Reverse String
 
@@ -55,7 +67,7 @@ Implement the function using the sample input/output hint.
 | `""`        | `""`        |
 | `"123.456"` | `"654.321"` |
 
-Test your solution by running the unit test <code>test_reverse_string.py</code> from your IDE or the command line.
+Test your solution by running the unit test <code>test_reverse_string.py</code> from your IDE or the command line by running `python -m unittest -v functions.test_reverse_string`
 
 ## Data Exploration
 
@@ -71,4 +83,10 @@ def get_students_by_female_with_score_greater_than_90(
     raise NotImplementedError()
 ```
 
-Run the <code>test_students.py</code> from your IDE or the command line.
+Run the <code>test_students.py</code> from your IDE or the command line by running `python -m unittest -v data_exploration.test_students`
+
+## Final Reminder
+
+As a final check, you can run all the tests at once by running `python -m unittest -v functions.test_count_vowels functions.test_reverse_string data_exploration.test_students` from the command line.
+
+Ensure all tests pass or as many tests pass to your satisfaction before committing and push your work.
